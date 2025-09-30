@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaVista_Seguridad;
+using CapaVista;
 
 namespace CapaVista_Menu
 {
@@ -30,6 +31,13 @@ namespace CapaVista_Menu
         {
             CapaVista_Seguridad.frmBitacora bitacora = new CapaVista_Seguridad.frmBitacora();
             bitacora.ShowDialog();
+        }
+
+        private void mantenimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Facultades facu = new Frm_Facultades();
+            facu.Show();
+            this.Hide();
         }
     }
 }

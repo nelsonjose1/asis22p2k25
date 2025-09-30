@@ -7,34 +7,15 @@ using System.Data.Odbc;
 
 namespace CapaModelo_Seguridad
 {
-    class Conexion
-    {
-        public OdbcConnection conexion()
+        public class Conexion
         {
-            //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=segundoparcial2k25");
-            try
-            {
-                conn.Open();
-            }
-            catch (OdbcException)
-            {
-                Console.WriteLine("No Conectó");
-            }
-            return conn;
-        }
+            private const string ConnStr = "DSN=segundoparcial2k25;DATABASE=bdasis22p2k25;OPTION=3;";
 
-        //metodo para cerrar la conexion
-        public void desconexion(OdbcConnection conn)
-        {
-            try
+            public OdbcConnection conexion()
             {
-                conn.Close();
-            }
-            catch (OdbcException)
-            {
-                Console.WriteLine("No Conectó");
+                var cn = new OdbcConnection(ConnStr);
+                cn.Open();
+                return cn;
             }
         }
     }
-}
