@@ -12,7 +12,7 @@ namespace CapaModelo_Seguridad
         public OdbcConnection conexion()
         {
             //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("Dsn=asis22p2k25");
+            OdbcConnection conn = new OdbcConnection("Dsn=segundoparcial2k25");
             try
             {
                 conn.Open();

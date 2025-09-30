@@ -22,6 +22,7 @@ namespace CapaVista_Seguridad
         private void Btn_BuscarRango_Click(object sender, EventArgs e)
         {
             CargarEnGrid(cn.BuscarPorRango(Dtp_PrimeraFecha.Value, Dtp_SegundaFecha.Value));
+            cn.RegistrarAccion(1, 1, "Consulta", false);
         }
         private void CargarEnGrid(DataTable dt)
         {
