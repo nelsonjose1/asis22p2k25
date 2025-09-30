@@ -34,6 +34,9 @@
     <Reference Include="CapaControlador_Menu">
       <HintPath>..\CapaControlador_Menu\bin\Debug\CapaControlador_Menu.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModelo_Menu">
+      <HintPath>..\CapaModelo_Menu\bin\Debug\CapaModelo_Menu.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista_Seguridad">
       <HintPath>..\..\..\..\componentes\seguridad\prototipo_v1\CapaVista_Seguridad\bin\Debug\CapaVista_Seguridad.dll</HintPath>
     </Reference>
@@ -49,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Facultades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Facultades.Designer.cs">
+      <DependentUpon>Frm_Facultades.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_Facultades.resx">
+      <DependentUpon>Frm_Facultades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuGeneral.resx">
       <DependentUpon>MenuGeneral.cs</DependentUpon>
     </EmbeddedResource>

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Data;
-using System.Data.Odbc;
+using System.Data.Odbc; 
 
 namespace CapaModelo_Seguridad
 {
